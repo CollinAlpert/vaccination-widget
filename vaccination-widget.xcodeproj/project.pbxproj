@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F063597F27B6870C00323FAF /* VaccinationWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F063597E27B6870C00323FAF /* VaccinationWidgetApp.swift */; };
+		F063598127B6870C00323FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F063598027B6870C00323FAF /* ContentView.swift */; };
+		F063598327B6870C00323FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F063598227B6870C00323FAF /* Assets.xcassets */; };
+		F063598627B6870C00323FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F063598527B6870C00323FAF /* Preview Assets.xcassets */; };
+		F063598E27B6875300323FAF /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = F063598D27B6875300323FAF /* CodeScanner */; };
+		F063599127B6876900323FAF /* EUDCCDecoder in Frameworks */ = {isa = PBXBuildFile; productRef = F063599027B6876900323FAF /* EUDCCDecoder */; };
+		F063599927B6877C00323FAF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F063599827B6877C00323FAF /* WidgetKit.framework */; };
+		F063599B27B6877C00323FAF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F063599A27B6877C00323FAF /* SwiftUI.framework */; };
+		F063599E27B6877C00323FAF /* Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F063599D27B6877C00323FAF /* Widget.swift */; };
+		F06359A027B6877C00323FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F063599F27B6877C00323FAF /* Assets.xcassets */; };
+		F06359A427B6877C00323FAF /* widgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F063599627B6877C00323FAF /* widgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F06359AA27B687CD00323FAF /* EUDCCDecoder in Frameworks */ = {isa = PBXBuildFile; productRef = F06359A927B687CD00323FAF /* EUDCCDecoder */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F06359A227B6877C00323FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F063597327B6870C00323FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F063599527B6877C00323FAF;
+			remoteInfo = widgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F06359A827B6877C00323FAF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F06359A427B6877C00323FAF /* widgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F063597B27B6870C00323FAF /* vaccination-widget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vaccination-widget.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F063597E27B6870C00323FAF /* VaccinationWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccinationWidgetApp.swift; sourceTree = "<group>"; };
+		F063598027B6870C00323FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F063598227B6870C00323FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F063598527B6870C00323FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F063599627B6877C00323FAF /* widgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F063599827B6877C00323FAF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		F063599A27B6877C00323FAF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		F063599D27B6877C00323FAF /* Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widget.swift; sourceTree = "<group>"; };
+		F063599F27B6877C00323FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F06359A127B6877C00323FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06359AB27B6881E00323FAF /* vaccination-widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "vaccination-widget.entitlements"; sourceTree = "<group>"; };
+		F06359AC27B6883100323FAF /* widgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F063597827B6870C00323FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F063599127B6876900323FAF /* EUDCCDecoder in Frameworks */,
+				F063598E27B6875300323FAF /* CodeScanner in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F063599327B6877C00323FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F063599B27B6877C00323FAF /* SwiftUI.framework in Frameworks */,
+				F063599927B6877C00323FAF /* WidgetKit.framework in Frameworks */,
+				F06359AA27B687CD00323FAF /* EUDCCDecoder in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F063597227B6870C00323FAF = {
+			isa = PBXGroup;
+			children = (
+				F06359AC27B6883100323FAF /* widgetExtension.entitlements */,
+				F063597D27B6870C00323FAF /* vaccination-widget */,
+				F063599C27B6877C00323FAF /* widget */,
+				F063599727B6877C00323FAF /* Frameworks */,
+				F063597C27B6870C00323FAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F063597C27B6870C00323FAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F063597B27B6870C00323FAF /* vaccination-widget.app */,
+				F063599627B6877C00323FAF /* widgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F063597D27B6870C00323FAF /* vaccination-widget */ = {
+			isa = PBXGroup;
+			children = (
+				F06359AB27B6881E00323FAF /* vaccination-widget.entitlements */,
+				F063597E27B6870C00323FAF /* VaccinationWidgetApp.swift */,
+				F063598027B6870C00323FAF /* ContentView.swift */,
+				F063598227B6870C00323FAF /* Assets.xcassets */,
+				F063598427B6870C00323FAF /* Preview Content */,
+			);
+			path = "vaccination-widget";
+			sourceTree = "<group>";
+		};
+		F063598427B6870C00323FAF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F063598527B6870C00323FAF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F063599727B6877C00323FAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F063599827B6877C00323FAF /* WidgetKit.framework */,
+				F063599A27B6877C00323FAF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F063599C27B6877C00323FAF /* widget */ = {
+			isa = PBXGroup;
+			children = (
+				F063599D27B6877C00323FAF /* Widget.swift */,
+				F063599F27B6877C00323FAF /* Assets.xcassets */,
+				F06359A127B6877C00323FAF /* Info.plist */,
+			);
+			path = widget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F063597A27B6870C00323FAF /* vaccination-widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F063598927B6870C00323FAF /* Build configuration list for PBXNativeTarget "vaccination-widget" */;
+			buildPhases = (
+				F063597727B6870C00323FAF /* Sources */,
+				F063597827B6870C00323FAF /* Frameworks */,
+				F063597927B6870C00323FAF /* Resources */,
+				F06359A827B6877C00323FAF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F06359A327B6877C00323FAF /* PBXTargetDependency */,
+			);
+			name = "vaccination-widget";
+			packageProductDependencies = (
+				F063598D27B6875300323FAF /* CodeScanner */,
+				F063599027B6876900323FAF /* EUDCCDecoder */,
+			);
+			productName = "vaccination-widget";
+			productReference = F063597B27B6870C00323FAF /* vaccination-widget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F063599527B6877C00323FAF /* widgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F06359A527B6877C00323FAF /* Build configuration list for PBXNativeTarget "widgetExtension" */;
+			buildPhases = (
+				F063599227B6877C00323FAF /* Sources */,
+				F063599327B6877C00323FAF /* Frameworks */,
+				F063599427B6877C00323FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = widgetExtension;
+			packageProductDependencies = (
+				F06359A927B687CD00323FAF /* EUDCCDecoder */,
+			);
+			productName = widgetExtension;
+			productReference = F063599627B6877C00323FAF /* widgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F063597327B6870C00323FAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F063597A27B6870C00323FAF = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					F063599527B6877C00323FAF = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F063597627B6870C00323FAF /* Build configuration list for PBXProject "vaccination-widget" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F063597227B6870C00323FAF;
+			packageReferences = (
+				F063598C27B6875300323FAF /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				F063598F27B6876900323FAF /* XCRemoteSwiftPackageReference "EUDCCKit" */,
+			);
+			productRefGroup = F063597C27B6870C00323FAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F063597A27B6870C00323FAF /* vaccination-widget */,
+				F063599527B6877C00323FAF /* widgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F063597927B6870C00323FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F063598627B6870C00323FAF /* Preview Assets.xcassets in Resources */,
+				F063598327B6870C00323FAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F063599427B6877C00323FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F06359A027B6877C00323FAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F063597727B6870C00323FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F063598127B6870C00323FAF /* ContentView.swift in Sources */,
+				F063597F27B6870C00323FAF /* VaccinationWidgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F063599227B6877C00323FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F063599E27B6877C00323FAF /* Widget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F06359A327B6877C00323FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F063599527B6877C00323FAF /* widgetExtension */;
+			targetProxy = F06359A227B6877C00323FAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F063598727B6870C00323FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F063598827B6870C00323FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F063598A27B6870C00323FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vaccination-widget/vaccination-widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vaccination-widget/Preview Content\"";
+				DEVELOPMENT_TEAM = 79QFG4L2E9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To scan vaccination QR codes, this app requires access to the camera.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.collinalpert.vaccination-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F063598B27B6870C00323FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "vaccination-widget/vaccination-widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"vaccination-widget/Preview Content\"";
+				DEVELOPMENT_TEAM = 79QFG4L2E9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "To scan vaccination QR codes, this app requires access to the camera.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.collinalpert.vaccination-widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F06359A627B6877C00323FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79QFG4L2E9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.collinalpert.vaccination-widget.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F06359A727B6877C00323FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79QFG4L2E9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.collinalpert.vaccination-widget.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F063597627B6870C00323FAF /* Build configuration list for PBXProject "vaccination-widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F063598727B6870C00323FAF /* Debug */,
+				F063598827B6870C00323FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F063598927B6870C00323FAF /* Build configuration list for PBXNativeTarget "vaccination-widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F063598A27B6870C00323FAF /* Debug */,
+				F063598B27B6870C00323FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F06359A527B6877C00323FAF /* Build configuration list for PBXNativeTarget "widgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F06359A627B6877C00323FAF /* Debug */,
+				F06359A727B6877C00323FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F063598C27B6875300323FAF /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		F063598F27B6876900323FAF /* XCRemoteSwiftPackageReference "EUDCCKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SvenTiigi/EUDCCKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F063598D27B6875300323FAF /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F063598C27B6875300323FAF /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		F063599027B6876900323FAF /* EUDCCDecoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F063598F27B6876900323FAF /* XCRemoteSwiftPackageReference "EUDCCKit" */;
+			productName = EUDCCDecoder;
+		};
+		F06359A927B687CD00323FAF /* EUDCCDecoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F063598F27B6876900323FAF /* XCRemoteSwiftPackageReference "EUDCCKit" */;
+			productName = EUDCCDecoder;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F063597327B6870C00323FAF /* Project object */;
+}
